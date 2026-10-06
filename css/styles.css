@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  background-color: #1F4D3A;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 16px;
+}
+
+h1 {
+  margin: 0;
+}
+
+.cardHeader {
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+header {
+  background-color: #163829;
+}
+header nav {
+  color: #ECE6D6;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+.left_rightSections {
+  background-color: #1F4D3A;
+  display: flex;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.leftSection {
+  background-color: #163829;
+  border-radius: 5px;
+  min-width: 350px;
+  padding: 15px;
+}
+.leftSection p {
+  margin: 0;
+}
+.leftSection div {
+  margin-bottom: 10px;
+}
+.leftSection input {
+  margin-top: 3px;
+  padding: 5px;
+}
+.leftSection .diceRollerCard_Auto {
+  background-color: #ECE6D6;
+  padding: 15px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.leftSection .diceRollerCard_Auto .drAutoTop .diceTypeDiv {
+  display: flex;
+  flex-direction: column;
+}
+.leftSection .diceRollerCard_Auto .drAutoTop .diceTypeDiv select {
+  padding: 5px;
+}
+.leftSection .diceRollerCard_Auto .drAutoTop .diceQuantityDiv {
+  display: flex;
+  flex-direction: column;
+}
+.leftSection .diceRollerCard_Auto .drAutoMiddle .drModifierNameDiv {
+  display: flex;
+  flex-direction: column;
+}
+.leftSection .diceRollerCard_Auto .drAutoMiddle .drModifierAmtDiv {
+  display: flex;
+  flex-direction: column;
+}
+.leftSection .diceRollerCard_Auto .drAutoBottom {
+  display: flex;
+}
+.leftSection .diceRollerCard_Auto .drAutoBottom .rollBtn {
+  width: 100%;
+}
+.leftSection .diceRollerCard_Auto .drAutoBottom .rollBtn input {
+  width: 100%;
+  background-color: #C99A3B;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 16px;
+}
+.leftSection .diceRollerCard_Man {
+  background-color: #ECE6D6;
+  padding: 15px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.leftSection .diceRollerCard_Man .drManTop .diceTypeDiv {
+  display: flex;
+  flex-direction: column;
+}
+.leftSection .diceRollerCard_Man .drManTop .diceTypeDiv select {
+  padding: 5px;
+}
+.leftSection .diceRollerCard_Man .drManTop .diceQuantityDiv {
+  display: flex;
+  flex-direction: column;
+}
+.leftSection .diceRollerCard_Man .drManMiddle .drModifierDiv_Man .drModifierNameDiv {
+  display: flex;
+  flex-direction: column;
+}
+.leftSection .diceRollerCard_Man .drManMiddle .drModifierDiv_Man .drModifierAmtDiv {
+  display: flex;
+  flex-direction: column;
+}
+.leftSection .diceRollerCard_Man .drManMiddle .diceRollResultDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.leftSection .diceRollerCard_Man .drManMiddle .diceRollResultDiv input {
+  width: 100%;
+}
+.leftSection .diceRollerCard_Man .drManBottom {
+  display: flex;
+}
+.leftSection .diceRollerCard_Man .drManBottom .calculateBtn {
+  width: 100%;
+}
+.leftSection .diceRollerCard_Man .drManBottom .calculateBtn input {
+  width: 100%;
+  background-color: #C99A3B;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.rightSection {
+  min-width: 600px;
+  padding: 15px;
+  background-color: #ECE6D6;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+.rightSection p {
+  margin: 0;
+}
+.rightSection span {
+  font-weight: bold;
+}
+.rightSection input {
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.rightSection .entryCard .entryTop {
+  display: flex;
+  justify-content: space-between;
+}
+.rightSection .entryCard .entryMiddle {
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.rightSection .entryCard .entryMiddle .entryNameDiv {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.rightSection .entryCard .entryMiddle .entryNameDiv p {
+  margin-top: 6px;
+}
+.rightSection .entryCard .entryMiddle .entryNameDiv input {
+  width: 83%;
+  height: 30px;
+  padding-left: 5px;
+}
+.rightSection .entryCard .entryMiddle .rollListDiv {
+  background-color: #DCD3BE;
+  border-top: 1px solid black;
+  min-height: 150px;
+  padding: 10px;
+}
+.rightSection .entryCard .entryMiddle .rollListDiv .roll {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.rightSection .entryCard .entryMiddle .rollListDiv .roll #rollShort {
+  margin-bottom: 5px;
+}
+.rightSection .entryCard .entryMiddle .rollListDiv .roll .rollEditBtns {
+  display: flex;
+}
+.rightSection .entryCard .entryMiddle .rollListDiv .roll .rollEditBtns #deleteRoll {
+  margin-right: 10px;
+  border: 1px solid #8E2F2F;
+  color: #8E2F2F;
+  font-weight: bold;
+}
+.rightSection .entryCard .entryMiddle .rollListDiv .roll .rollEditBtns #deleteRoll, .rightSection .entryCard .entryMiddle .rollListDiv .roll .rollEditBtns #editRoll {
+  width: 65px;
+  height: 25px;
+}
+.rightSection .entryCard .entryMiddle .rollListDiv .roll .rollDesc #rollShort {
+  padding-bottom: 10px;
+}
+.rightSection .entryCard .entryBottom {
+  display: flex;
+}
+.rightSection .entryCard .entryBottom .newEntryBtnDiv {
+  margin-top: 10px;
+}
+.rightSection .entryCard .entryBottom #saveEntryBtn {
+  background-color: #C99A3B;
+}

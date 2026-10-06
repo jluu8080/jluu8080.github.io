@@ -1,0 +1,122 @@
+.rightSection
+{
+    min-width:600px;
+    padding:15px;
+    background-color: #ECE6D6;
+    border-radius: 5px;
+    margin-left:20px;
+
+    p{margin:0;}
+    
+    span{font-weight: bold;}
+
+    input
+    {
+        padding:5px;
+        border:1px solid black;
+        border-radius: 5px;
+    }
+
+    .entryCard
+    {
+        
+        .entryTop
+        {
+            display:flex;
+            justify-content: space-between;
+        }
+
+        .entryMiddle
+        {
+            border:1px solid black;
+            border-radius: 5px;
+
+            .entryNameDiv
+            {
+                display: flex;
+                justify-content: space-between;
+
+                padding:10px;
+                p
+                {
+                    margin-top:6px;
+                }
+
+                input
+                {
+                    width:83%;
+                    height:30px;
+                    padding-left:5px;
+                }
+            }
+
+            .rollListDiv
+            {
+                background-color: #DCD3BE;
+                border-top: 1px solid black;
+                min-height:150px;
+                
+                padding:10px;
+
+                .roll
+                {
+                    display:flex;
+                    justify-content: space-between;
+                    margin-top:10px;
+                    padding:10px;
+
+                    background-color:#fff;
+                    border:1px solid black;
+                    border-radius: 5px;
+
+                    #rollShort
+                    {
+                        margin-bottom:5px;
+                    }
+
+                    .rollEditBtns
+                    {
+                        display:flex;
+                        
+
+                        #deleteRoll
+                        {
+                            margin-right:10px;
+                            border: 1px solid #8E2F2F;
+
+                            color:#8E2F2F;
+                            font-weight: bold;
+                        }
+
+                        #deleteRoll, #editRoll
+                        {
+                            width:65px;
+                            height:25px;
+                        }
+                    }
+                    
+                    .rollDesc #rollShort
+                    {
+                        padding-bottom:10px;
+                    }
+
+                }
+            }
+        }
+
+        .entryBottom
+        {
+            display:flex;
+
+            .newEntryBtnDiv
+            {
+                margin-top:10px;
+            }
+
+            #saveEntryBtn
+            {
+                background-color: #C99A3B;
+            }
+        }
+    }
+}

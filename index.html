@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Roller Tool</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+
+<body>
+    <header>
+        <nav>
+            <h1>Dice Roller</h1>
+        </nav>
+    </header>
+
+    <main>
+        <section class="left_rightSections">
+            <section class="leftSection">
+
+                <div class="diceRollerCard_Auto">
+                    <p class="cardHeader">Auto Roll</p>
+
+                    <div class="drAutoTop">
+                        <div class="diceTypeDiv">
+                            <p>Dice Type:</p>
+                            
+                            <select id="diceType_Auto">
+                                <option value="d4">d4</option>
+                                <option value="d6">d6</option>
+                                <option value="d8">d8</option>
+                                <option value="d9">d9</option>
+                                <option value="d12">d12</option>
+                                <option value="d20">d20</option>
+                            </select>
+                        </div>
+
+                        <div class="diceQuantityDiv">
+                            <p>Quantity:</p>
+                            <input type="number" id="diceQuantity_Auto">
+                        </div>
+                    </div>
+
+                    <div class="drAutoMiddle">
+                        <div class="drModifierNameDiv">
+                            <p>Modifier Name: </p>
+                            <input type="text" id="modifierName">
+                        </div>
+
+                        <div class="drModifierAmtDiv">
+                            <p>Modifier Amount: </p>
+                            <input type="number" id="modifierAmt">
+                        </div>
+                    </div>
+
+                    <div class="drAutoBottom">
+                        <div class="rollBtn">
+                            <input type="button" id="rollBtn" value="Roll" onclick="roll()">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="diceRollerCard_Man">
+                    <p class="cardHeader">Manual Roll</p>
+
+                    <div class="drManTop">
+                        <div class="diceTypeDiv">
+                            <p>Dice Type:</p>
+                            
+                            <select id="diceType_Man">
+                                <option value="d4">d4</option>
+                                <option value="d6">d6</option>
+                                <option value="d10">d10</option>
+                                <option value="d12">d12</option>
+                                <option value="d20">d20</option>
+                            </select>
+                        </div>
+
+                        <div class="diceQuantityDiv">
+                            <p>Quantity:</p>
+                            <input type="number" id="diceQuantity_Man">
+                        </div>
+                    </div>
+
+
+                    <div class="drManMiddle">
+                        <div class="drModifierDiv_Man">
+                            <div class="drModifierNameDiv">
+                                <p>Modifier: </p>
+                                <input type="text" id="modifierName_Man">
+                            </div>
+
+                            <div class="drModifierAmtDiv">
+                                <p>Modifier Amount: </p>
+                                <input type="number" id="modifierAmt_Man">
+                            </div>
+                        </div>
+
+                        <div class="diceRollResultDiv">
+                            <p>Dice Result</p>
+                            <input type="number" id="diceResult">
+                        </div>
+                    </div>
+
+
+                    <div class="drManBottom">
+                        <div class="calculateBtn">
+                            <input type="button" value="Calculate" onclick="calculate()">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="rightSection">
+                <div class="entryDiv">
+                    
+                    <div class="entryListDiv">
+                        <h2>Entry List:</h2>
+
+                        <div class="entryListDiv"></div>
+                    </div>
+
+                    <div class="entryCard">
+                        <div class="entryTop">
+                            <h3>Entry 1</h3>
+
+                            <p id="numRolls"># Rolls</p>
+                        </div>
+
+                        <div class="entryMiddle">
+                            
+                            <div class="entryNameDiv">
+                                <p>Entry Name: </p>
+                                <input type="text" id="entryName">
+                            </div>
+
+                            <div class="rollListDiv">
+                                <p class="cardHeader"> Roll List</p>
+
+                                <div class="roll">
+                                    <div class="rollDesc">
+                                        <p id="rollShort">RollShort</p>
+                                        <p id="rollDetailed">RollDetailed</p>
+                                    </div>
+
+                                    <!-- <div class="rollEditBtns">
+                                        <input type="button" id="deleteRoll" onclick="" value="Delete">
+
+                                        <input type="button" id="editRoll" onclick="" value="Edit">
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- <div class="entryBottom">
+                            <div class="newEntryBtnDiv">
+                                <input type="button" id="newEntryBtn" onclick="" value="New Entry">
+                                <input type="button" id="saveEntryBtn" onclick="" value="Save Entry">
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <script src="app/app.js"></script>
+</body>
+</html>

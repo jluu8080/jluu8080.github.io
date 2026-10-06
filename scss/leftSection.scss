@@ -1,0 +1,177 @@
+.leftSection
+{
+    background-color: #163829;
+    // display:flex;
+    border-radius: 5px;
+    min-width:350px;
+
+    padding: 15px;
+
+    p{margin:0};
+    
+    div
+    {
+        margin-bottom: 10px;
+    };
+
+    input
+    {
+        margin-top:3px;
+        padding:5px;
+    }
+
+
+    .diceRollerCard_Auto
+    {
+        background-color: #ECE6D6;
+        
+        padding:15px;
+
+        border: 1px solid black;
+        border-radius: 10px;
+
+    
+        .drAutoTop
+        {
+
+            .diceTypeDiv
+            {
+                display:flex;
+                flex-direction: column;
+
+                select
+                {
+                    padding:5px;
+                }
+            }
+
+            .diceQuantityDiv
+            {
+                display:flex;
+                flex-direction: column;
+            }
+        }
+
+        .drAutoMiddle
+        {
+            .drModifierNameDiv
+            {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .drModifierAmtDiv
+            {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        .drAutoBottom
+        {
+            display:flex;
+
+            .rollBtn
+            {
+                width:100%;
+
+                input
+                {
+                    width:100%;
+                    background-color: #C99A3B;
+                    border: 1px solid transparent;
+                    border-radius: 5px;
+                    text-align: center;
+                    font-size:16px;
+                }
+            }
+        }
+    }
+
+    .diceRollerCard_Man
+    {
+        background-color: #ECE6D6;
+        
+        padding:15px;
+
+        border: 1px solid black;
+        border-radius: 10px;
+
+    
+        .drManTop
+        {
+
+            .diceTypeDiv
+            {
+                display:flex;
+                flex-direction: column;
+
+                select
+                {
+                    padding:5px;
+                }
+            }
+
+            .diceQuantityDiv
+            {
+                display:flex;
+                flex-direction: column;
+            }
+        }
+
+        .drManMiddle
+        {
+            .drModifierDiv_Man
+            {
+                .drModifierNameDiv
+                {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                .drModifierAmtDiv
+                {
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+
+            .diceRollResultDiv
+            {
+
+                display:flex;
+                flex-direction: column;
+                align-items: center;
+
+                margin-top: 20px;
+                margin-bottom: 20px;
+
+                input
+                {
+                    width: 100%;
+                }
+            }
+        }
+
+
+        .drManBottom
+        {
+            display:flex;
+
+            .calculateBtn
+            {
+                width:100%;
+
+                input
+                {
+                    width:100%;
+                    background-color: #C99A3B;
+                    border: 1px solid transparent;
+                    border-radius: 5px;
+                    text-align: center;
+                    font-size:16px;
+                }
+            }
+        }
+    }
+}
